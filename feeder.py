@@ -1,25 +1,27 @@
 #!/usr/bin/env python3
 """
-tennis-feed: OUR OWN data service.
+tennis-feed v3: OUR OWN data service - now with REAL-TIME results!
 NO third-party API providers, NO API keys needed!
 
-Sources (both free, keyless):
-  * Historic backbone 2015-2026-05-25: Jeff Sackmann archive (CC BY-NC-SA 4.0;
+Sources (all free, keyless):
+  * Historic backbone to 2026-05-25: Jeff Sackmann archive (CC BY-NC-SA 4.0;
     credit him - we do, in every output file)
-  * Fresh 2026 data (updated within days!): TennisMyLife open database
-    (stats.tennismylife.org, MIT license - can even be used commercially)
+  * Fresh 2026 data: TennisMyLife open database (stats.tennismylife.org, MIT)
+      - main tour + challenger season files (updated daily)
+      - *_ongoing_tourneys.csv - RESULTS of tournaments in progress, updated
+        in REAL TIME (the freshness gold: sees today's matches while the
+        season file can lag a day or two!)
 
 Outputs into ./data :
-  matches.json  - NEW matches only (after 2026-05-25, deduped against the
-                  archive by date+names so no real match is counted twice)
+  matches.json  - NEW matches only (after 2026-05-25, deduped by key AND by
+                  date+names so no real match is counted twice)
   rankings.json - ONLY the newest archive ranking week (ids final: WTA +1M)
-  today.json    - placeholder (empty events - no keyless fixtures source yet)
+  today.json    - placeholder (fixtures still deferred)
   feed_meta.json - stamp + counters + attribution
 """
 import csv
 import io
 import json
-import os
 import pathlib
 import urllib.request
 from datetime import datetime, timezone
@@ -28,13 +30,25 @@ HERE = pathlib.Path(__file__).resolve().parent
 DATA = HERE / "data"
 DATA.mkdir(exist_ok=True)
 
-# sources
+# ---- sources ----------------------------------------------------------------
 HF = "https://huggingface.co/datasets/Aneeshers/tennis-sackmann-archive/resolve/main"
 GH = "https://raw.githubusercontent.com/Kadantte/tennis_atp/master"
 SACK_ATP_2026 = [f"{GH}/atp_matches_2026.csv", f"{HF}/atp/atp_matches_2026.csv"]
+SACK_ATP_CH_2026 = [f"{GH}/atp_matches_qual_chall_2026.csv", f"{HF}/atp/atp_matches_qual_chall_2026.csv"]
 SACK_WTA_2026 = [f"{HF}/wta/wta_matches_2026.csv"]
-TLM_ATP_2026 = "https://stats.tennismylife.org/data/2026.csv"
-TLM_WTA_2026 = "https://stats.tennismylife.org/data/2026_wta.csv"
+SACK_WTA_ITF_2026 = [f"{HF}/wta/wta_matches_qual_itf_2026.csv"]
+TLM_MAIN = [
+    ('ATP', "https://stats.tennismylife.org/data/2026.csv"),
+    ('WTA', "https://stats.tennismylife.org/data/2026_wta.csv"),
+]
+TLM_CH = [
+    ('ATP', "https://stats.tennismylife.org/data/2026_challenger.csv"),
+]
+TLM_ONGOING = [
+    ('ATP', "https://stats.tennismylife.org/data/ongoing_tourneys.csv"),
+    ('WTA', "https://stats.tennismylife.org/data/wta_ongoing_tourneys.csv"),
+    ('ATP', "https://stats.tennismylife.org/data/challenger_ongoing_tourneys.csv"),
+]
 RANK_FILES = [
     ('ATP', [f"{GH}/atp_rankings_current.csv", f"{HF}/atp/atp_rankings_current.csv"]),
     ('WTA', [f"{HF}/wta/wta_rankings_current.csv"]),
@@ -42,7 +56,7 @@ RANK_FILES = [
 
 CUTOFF = "20260525"          # the archive freezes at this date
 WTA_OFFSET = 1_000_000       # archive-wide WTA id rule (kept for ranks)
-TLM_OFFSET = 50_000_000      # 4-char TLM player codes -> base36 (max 1,679,616) shifted up
+TLM_OFFSET = 50_000_000      # 4-char TLM player codes -> base36 shifted up
 
 UA = {"User-Agent": "tennis-feed/1.0 (personal project)"}
 
@@ -61,7 +75,7 @@ def fetch_first(urls):
     for u in urls:
         raw = fetch_bytes(u)
         if raw:
-            print(f"  {len(raw)//1024} KB from {u}")
+            print(f"  {len(raw)//1024} KB from {u.rsplit('/', 1)[-1]}")
             return raw
     return None
 
@@ -72,7 +86,7 @@ def csv_rows(raw: bytes) -> list[dict]:
 
 def tlm_player_id(code: str, tour: str) -> int | None:
     """TLM ids: WTA & some ATP rows are numeric (join archive namespace),
-    newest ATP players have 4-char codes -> base36 -> distant numeric bucket."""
+    newest players have 4-char codes -> base36 -> distant numeric bucket."""
     code = code.strip()
     if not code:
         return None
@@ -84,30 +98,37 @@ def tlm_player_id(code: str, tour: str) -> int | None:
         return None
 
 
-def sack_dedupe_set() -> set:
-    """(date, winner, loser) triples from the FULL Sackmann 2026 files.
-    TLM row for the same real match will carry the same triple -> skipped."""
+def triples_from(raw: bytes) -> set:
+    got = set()
+    for r in csv_rows(raw):
+        d8 = r.get('tourney_date', '') or ''
+        wn = (r.get('winner_name') or '').strip().lower()
+        ln = (r.get('loser_name') or '').strip().lower()
+        if len(d8) == 8 and wn and ln:
+            got.add((d8, wn, ln))
+    return got
+
+
+def known_triples() -> set:
+    """(date, winner, loser) from the FROZEN archive files only - so a real match
+    already in the archive namespace is never published under a TLM key.
+    Cross-file overlaps between TLM files are handled during collection."""
     seen = set()
-    for tour, urls in (('ATP', SACK_ATP_2026), ('WTA', SACK_WTA_2026)):
-        raw = fetch_first(urls)
-        if not raw:
-            continue
-        for r in csv_rows(raw):
-            d8 = r.get('tourney_date', '') or ''
-            wn = (r.get('winner_name') or '').strip().lower()
-            ln = (r.get('loser_name') or '').strip().lower()
-            if len(d8) == 8 and wn and ln:
-                seen.add((d8, wn, ln))
+    for urls in (SACK_ATP_2026, SACK_ATP_CH_2026, SACK_WTA_2026, SACK_WTA_ITF_2026):
+        raw = fetch_first(urls) if isinstance(urls, list) else fetch_bytes(urls)
+        if raw:
+            seen |= triples_from(raw)
     print("dedupe set size:", len(seen))
     return seen
 
 
-def build_matches(sack_seen: set) -> list[dict]:
-    out = []
-    for tour, url in (('ATP', TLM_ATP_2026), ('WTA', TLM_WTA_2026)):
+def collect(sources, seen_triples, seen_ids, out, tag):
+    """Append NEW match rows from `sources` ([(tour, url), ...])."""
+    total_new = 0
+    for tour, url in sources:
         raw = fetch_bytes(url)
         if not raw:
-            print(f"!! {tour} TLM file unreachable")
+            print(f"!! {tag}/{tour} file unreachable: {url.rsplit('/', 1)[-1]}")
             continue
         rows = csv_rows(raw)
         new_rows = 0
@@ -121,16 +142,19 @@ def build_matches(sack_seen: set) -> list[dict]:
                 continue
             if d8 <= CUTOFF:
                 continue                        # the archive covers everything until the freeze
-            if (d8, wn.lower(), ln.lower()) in sack_seen:
-                continue                        # same real match is already under a Sackmann key
             p1 = tlm_player_id(wid, tour)
             p2 = tlm_player_id(lid, tour)
             if p1 is None or p2 is None:
                 continue
             tid = (r.get('tourney_id') or '').strip()
             num = (r.get('match_num') or '').strip()
+            mid = f"tlm_{tour}_{tid}_{num}_{d8[:4]}"
+            triple = (d8, wn.lower(), ln.lower())
+            if mid in seen_ids or triple in seen_triples:
+                continue                        # same key, or same real match seen elsewhere
+            seen_ids.add(mid); seen_triples.add(triple)
             out.append({
-                "id": f"tlm_{tour}_{tid}_{num}_{d8[:4]}",
+                "id": mid,
                 "tour": tour,
                 "date": f"{d8[:4]}-{d8[4:6]}-{d8[6:8]}",
                 "p1": p1, "p2": p2, "w": p1,
@@ -141,8 +165,9 @@ def build_matches(sack_seen: set) -> list[dict]:
                 "c2": (r.get('loser_ioc') or '').strip(),
             })
             new_rows += 1
-        print(f"matches {tour}: {len(rows)} rows in file -> {new_rows} NEW (post {CUTOFF})")
-    return out
+        print(f"{tag} {tour}: {len(rows)} rows -> {new_rows} NEW")
+        total_new += new_rows
+    return total_new
 
 
 def build_rankings() -> dict:
@@ -168,12 +193,15 @@ def build_rankings() -> dict:
 
 
 def main():
-    print("== tennis-feed builder (independent edition) ==")
+    print("== tennis-feed builder v3 (real-time results edition) ==")
     now = datetime.now(timezone.utc).isoformat(timespec='seconds')
 
-    sack_seen = sack_dedupe_set()
-    matches = build_matches(sack_seen)
-    print("NEW matches total:", len(matches))
+    seen_triples = known_triples()
+    matches, seen_ids = [], set()
+    n_main = collect(TLM_MAIN, seen_triples, seen_ids, matches, "main2026")
+    n_ch = collect(TLM_CH, seen_triples, seen_ids, matches, "challenger2026")
+    n_on = collect(TLM_ONGOING, seen_triples, seen_ids, matches, "ONGOING")
+    print("NEW matches total:", len(matches), f"(main {n_main} / challer {n_ch} / ongoing {n_on})")
 
     rankings = build_rankings()
 
@@ -182,13 +210,14 @@ def main():
     (DATA / "rankings.json").write_text(json.dumps(rankings, separators=(',', ':')))
     (DATA / "today.json").write_text(json.dumps(
         {"generated": now, "events": [],
-         "note": "fixtures feed is deferred until a keyless schedule source is validated"},
+         "note": "fixtures feed is deferred; ONGOING results already flow through matches.json"},
         separators=(',', ':')))
     (DATA / "feed_meta.json").write_text(json.dumps({
         "generated": now,
+        "build": "v3",
         "attribution": [
             "historic data: Jeff Sackmann archive, CC BY-NC-SA 4.0",
-            "fresh 2026 data: TennisMyLife (stats.tennismylife.org), MIT license",
+            "fresh data: TennisMyLife (stats.tennismylife.org), MIT license",
         ],
         "counters": {
             "new_matches": len(matches),
