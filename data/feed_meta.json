@@ -1,9 +1,11 @@
 {
- "generated": "2026-10-20T04:15:10+00:00",
- "attribution": "Match & ranking data: Jeff Sackmann (tennis_atp / tennis_wta), CC BY-NC-SA 4.0",
+ "generated": "2026-10-20T06:28:57+00:00",
+ "attribution": [
+  "historic data: Jeff Sackmann archive, CC BY-NC-SA 4.0",
+  "fresh 2026 data: TennisMyLife (stats.tennismylife.org), MIT license"
+ ],
  "counters": {
-  "matches": 2744,
-  "ranked": 3812,
-  "today": 0
+  "new_matches": 2292,
+  "ranked": 3812
  }
 }
