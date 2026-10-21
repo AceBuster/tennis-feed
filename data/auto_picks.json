@@ -1,0 +1,84 @@
+{
+ "generated": "2026-10-21T11:25:54",
+ "date": "2026-10-21",
+ "source": "BettingAPP lab predict_today.py - same v7 brains as the app; attribution: Sackmann archive (CC BY-NC-SA 4.0) + TennisMyLife (MIT)",
+ "picks": [
+  {
+   "court": "Almaty",
+   "time": "12:30",
+   "tour": "ATP",
+   "n1": "Adrian Mannarino",
+   "n2": "Andrey Rublev",
+   "surface": "Hard",
+   "p1pct": 34,
+   "p2pct": 66,
+   "zone": "\u26a1"
+  },
+  {
+   "court": "Almaty",
+   "time": "17:30",
+   "tour": "ATP",
+   "n1": "Stefanos Tsitsipas",
+   "n2": "Mikhail Kukushkin",
+   "surface": "Hard",
+   "p1pct": 82,
+   "p2pct": 18,
+   "zone": "\u26a1"
+  },
+  {
+   "court": "Brussels",
+   "time": "12:30",
+   "tour": "ATP",
+   "n1": "Martin Damm",
+   "n2": "Francisco Cerundolo",
+   "surface": "Hard",
+   "p1pct": 33,
+   "p2pct": 67,
+   "zone": "\u26a1"
+  },
+  {
+   "court": "Lyon",
+   "time": "20:00",
+   "tour": "ATP",
+   "n1": "Moise Kouame",
+   "n2": "Lorenzo Musetti",
+   "surface": "Hard",
+   "p1pct": 25,
+   "p2pct": 75,
+   "zone": "\u26a1"
+  },
+  {
+   "court": "Lyon",
+   "time": "21:30",
+   "tour": "ATP",
+   "n1": "Benjamin Bonzi",
+   "n2": "Tommy Paul",
+   "surface": "Hard",
+   "p1pct": 20,
+   "p2pct": 80,
+   "zone": "\u26a1"
+  },
+  {
+   "court": "Ningbo",
+   "time": "09:30",
+   "tour": "WTA",
+   "n1": "Leylah Fernandez",
+   "n2": "Aliaksandra Sasnovich",
+   "surface": "Hard",
+   "p1pct": 71,
+   "p2pct": 29,
+   "zone": "\u26a1"
+  },
+  {
+   "court": "Ningbo",
+   "time": "11:00",
+   "tour": "WTA",
+   "n1": "Sorana Cirstea",
+   "n2": "Sara Bejlek",
+   "surface": "Hard",
+   "p1pct": 66,
+   "p2pct": 34,
+   "zone": "\u26a1"
+  }
+ ]
+}
