@@ -1,84 +1,117 @@
 {
- "generated": "2026-10-21T11:25:54",
- "date": "2026-10-21",
- "source": "BettingAPP lab predict_today.py - same v7 brains as the app; attribution: Sackmann archive (CC BY-NC-SA 4.0) + TennisMyLife (MIT)",
+ "generated": "2026-10-22T08:34:27+00:00",
+ "date": "2026-10-22",
+ "source": "tennis-feed robot brain - same v7 brains as the app; historic data: Jeff Sackmann archive, CC BY-NC-SA 4.0; fresh data: TennisMyLife (stats.tennismylife.org), MIT license",
  "picks": [
   {
    "court": "Almaty",
-   "time": "12:30",
+   "time": "13:15",
    "tour": "ATP",
-   "n1": "Adrian Mannarino",
-   "n2": "Andrey Rublev",
+   "n1": "Daniil Medvedev",
+   "n2": "Sho Shimabukuro",
    "surface": "Hard",
-   "p1pct": 34,
-   "p2pct": 66,
-   "zone": "\u26a1"
+   "p1pct": 84,
+   "p2pct": 16,
+   "zone": "⚡"
   },
   {
    "court": "Almaty",
    "time": "17:30",
    "tour": "ATP",
-   "n1": "Stefanos Tsitsipas",
-   "n2": "Mikhail Kukushkin",
+   "n1": "Alexander Bublik",
+   "n2": "Fabian Marozsan",
    "surface": "Hard",
-   "p1pct": 82,
-   "p2pct": 18,
-   "zone": "\u26a1"
+   "p1pct": 67,
+   "p2pct": 33,
+   "zone": "⚡"
   },
   {
    "court": "Brussels",
-   "time": "12:30",
+   "time": "",
    "tour": "ATP",
-   "n1": "Martin Damm",
-   "n2": "Francisco Cerundolo",
+   "n1": "Arthur Fils",
+   "n2": "Jaume Munar",
    "surface": "Hard",
-   "p1pct": 33,
-   "p2pct": 67,
-   "zone": "\u26a1"
+   "p1pct": 71,
+   "p2pct": 29,
+   "zone": "⚡"
+  },
+  {
+   "court": "Brussels",
+   "time": "14:30",
+   "tour": "ATP",
+   "n1": "Raphael Collignon",
+   "n2": "Jiri Lehecka",
+   "surface": "Hard",
+   "p1pct": 27,
+   "p2pct": 73,
+   "zone": "⚡"
+  },
+  {
+   "court": "Brussels",
+   "time": "16:00",
+   "tour": "ATP",
+   "n1": "David Goffin",
+   "n2": "Alex Michelsen",
+   "surface": "Hard",
+   "p1pct": 22,
+   "p2pct": 78,
+   "zone": "⚡"
+  },
+  {
+   "court": "Lyon",
+   "time": "15:00",
+   "tour": "ATP",
+   "n1": "Valentin Vacherot",
+   "n2": "Luca Van Assche",
+   "surface": "Hard",
+   "p1pct": 66,
+   "p2pct": 34,
+   "zone": "⚡"
+  },
+  {
+   "court": "Lyon",
+   "time": "16:30",
+   "tour": "ATP",
+   "n1": "Pierre Hugues Herbert",
+   "n2": "Taylor Fritz",
+   "surface": "Hard",
+   "p1pct": 24,
+   "p2pct": 76,
+   "zone": "⚡"
   },
   {
    "court": "Lyon",
    "time": "20:00",
    "tour": "ATP",
-   "n1": "Moise Kouame",
-   "n2": "Lorenzo Musetti",
+   "n1": "Flavio Cobolli",
+   "n2": "Stan Wawrinka",
    "surface": "Hard",
-   "p1pct": 25,
-   "p2pct": 75,
-   "zone": "\u26a1"
+   "p1pct": 77,
+   "p2pct": 23,
+   "zone": "⚡"
   },
   {
    "court": "Lyon",
    "time": "21:30",
    "tour": "ATP",
-   "n1": "Benjamin Bonzi",
-   "n2": "Tommy Paul",
+   "n1": "Kyrian Jacquet",
+   "n2": "Brandon Nakashima",
    "surface": "Hard",
-   "p1pct": 20,
-   "p2pct": 80,
-   "zone": "\u26a1"
+   "p1pct": 32,
+   "p2pct": 68,
+   "zone": "⚡"
   },
   {
    "court": "Ningbo",
-   "time": "09:30",
+   "time": "14:00",
    "tour": "WTA",
-   "n1": "Leylah Fernandez",
-   "n2": "Aliaksandra Sasnovich",
+   "n1": "Elena Rybakina",
+   "n2": "Polina Kudermetova",
    "surface": "Hard",
-   "p1pct": 71,
-   "p2pct": 29,
-   "zone": "\u26a1"
-  },
-  {
-   "court": "Ningbo",
-   "time": "11:00",
-   "tour": "WTA",
-   "n1": "Sorana Cirstea",
-   "n2": "Sara Bejlek",
-   "surface": "Hard",
-   "p1pct": 66,
-   "p2pct": 34,
-   "zone": "\u26a1"
+   "p1pct": 94,
+   "p2pct": 6,
+   "zone": "⚡"
   }
  ]
 }
