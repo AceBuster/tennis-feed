@@ -1,0 +1,54 @@
+# build-picks: the robot brain job
+# PASTE THIS FILE into the feed repo as:  .github/workflows/build-picks.yml
+# (the leading "#" lines are comments - GitHub ignores them)
+#
+# What it does: twice a night (and whenever you press "Run workflow") it runs
+# brain_picks.py, which reads data/draws/<today>.txt (your pasted schedule)
+# and regenerates data/auto_picks.json. No API keys, no third-party providers.
+
+name: build-picks
+
+on:
+  schedule:
+    - cron: "25 0 * * *"    # nightly pass ~00:25 UTC (right after midnight)
+    - cron: "25 9 * * *"    # morning catch-up (for drawings pasted later)
+  workflow_dispatch:        # the "Run workflow" button in the Actions tab
+    inputs:
+      date:
+        description: "Pick date = the draw file's date, e.g. 2026-10-23 (leave empty = today)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-picks
+  cancel-in-progress: false
+
+jobs:
+  picks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build today's picks (keyless, legal sources only)
+        run: |
+          python3 --version
+          if [ -n "${{ inputs.date || '' }}" ]; then
+            python3 brain_picks.py --date "${{ inputs.date }}"
+          else
+            python3 brain_picks.py
+          fi
+
+      - name: Commit the fresh auto_picks.json
+        run: |
+          git config user.name "tennis-feed robot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/auto_picks.json
+          if git diff --cached --quiet; then
+            echo "auto_picks.json unchanged - nothing to commit"
+          else
+            git commit -m "robot brain: rebuild auto_picks.json"
+            git push
+          fi
