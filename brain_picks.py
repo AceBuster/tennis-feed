@@ -140,15 +140,59 @@ COURT_RE = re.compile(r"^(?P<city>[A-Z][^(),]{0,40}?)\s*\((?P<country>[^)]+)\)\s
                       r"(?P<surf>hard|clay|grass|carpet)")
 SECTION_RE = re.compile(r"^(?P<first>[ATPWCI][A-Za-z ]*?)\s*-?\s*(?P<kind>SINGLES|DOUBLES)", re.I)
 TIME_RE = re.compile(r"^\d{1,2}:\d{2}$")
+PREFIX_TIME_RE = re.compile(r"^(\d{1,2}:\d{2})\s*[:\-]?\s+(\S.*)$")
+NUMPREFIX_RE = re.compile(r"^\s*(?:\[\d+\]|\(\d+\)|\d+[.)]|[Rr]\d+|Q\d|SE)\s+(?=[A-Z])")
+SPLIT_RE = re.compile(r"\s+(?:-{1,2}|\u2013|\u2014|vs\.?|v\.?|/)\s+", re.I)
+CAPTOK = re.compile(r"[A-Za-z][A-Za-z'\-]{1,}")
+INIT_START = re.compile(r"[A-Za-z]+\.[\sA-Za-z]*$")
 QUOTE = {"FRO", "Draw"}
 RESULT_MARKERS = {"Finished", "Cancelled", "Walkover", "Retired"}
-TELNUM = re.compile(r"^[\d\-\s]+$")
+TELNUM = re.compile(r"^[\d\-\s:apm+\.]+$")
 SURF = {"hard": "Hard", "clay": "Clay", "grass": "Grass", "carpet": "Hard"}
 
+# words that mark a line as LISTING NOISE, not a player
+BLOCK = {
+    "draw", "round", "rounds", "qualifying", "qual", "qualification",
+    "doubles", "singles", "court", "centre", "center", "order", "play",
+    "schedule", "result", "results", "finished", "cancelled", "walkover",
+    "retired", "seed", "seeds", "prize", "money", "points", "final",
+    "finale", "semifinal", "semifinals", "semis", "quarterfinal",
+    "quarterfinals", "quarters", "match", "matches", "game", "games",
+    "score", "scores", "live", "order", "pdf", "draws", "bracket", "table",
+    "follow", "streaming", "video", "make", "money", "betting", "odds",
+    "stream", "guides", "insight", "tennis", "photo", "photos", "history",
+    "ranking", "rankings", "news", "hopman", "season", "winners", "comeback",
+    "legends", "tour", "tourney", "main", "sun", "mon", "tue",
+    "wed", "thu", "fri", "sat", "today", "tomorrow", "yesterday", "update",
+    "feeds", "stats", "watch", "listen", "app", "site", "fan",
+}
 
-def _is_name(line):
-    t = line.strip()
-    if not t or len(t) < 3:
+
+def _shape_initial(t):
+    """Old classic shape: ends with an initial dot cluster - 'Bellucci M.'."""
+    if not re.search(r"[A-Za-z]", t):
+        return False
+    return bool(INIT_START.search(t))
+
+
+def _shape_fullname(t):
+    """Bracket shape: >= 2 capitalized alpha words, no digits, no noise words."""
+    if re.search(r"\d", t):
+        return False
+    toks = CAPTOK.findall(t)
+    if len(toks) < 2:
+        return False
+    caps = [w for w in toks if w[0].isupper()]
+    if len(caps) < 2:
+        return False
+    if any(w.lower().strip("'") in BLOCK for w in toks):
+        return False
+    return True
+
+
+def _is_name(t):
+    t = t.strip()
+    if len(t) < 3:
         return False
     if TELNUM.match(t):
         return False
@@ -158,11 +202,19 @@ def _is_name(line):
         return False
     if COURT_RE.match(t):
         return False
-    return bool(re.search(r"[A-Za-z]", t) and re.search(r"[A-Za-z]+\.\s*$", t))
+    return bool(_shape_initial(t) or _shape_fullname(t))
 
 
 def parse_inbox(text):
+    """Scan -> typed events (each carries court context) -> pair walk with a
+    1-step look-ahead so 'A / B ... Finished' rows are dropped."""
     ctx, ev = {"court": None, "tour": "ATP", "surf": "Hard"}, []
+
+    def push_names(chunk):
+        chunk = NUMPREFIX_RE.sub("", chunk).strip()
+        if _is_name(chunk):
+            ev.append(("name", chunk, dict(ctx)))
+
     for s in text.splitlines():
         t = s.strip()
         if not t:
@@ -182,13 +234,23 @@ def parse_inbox(text):
         if TIME_RE.match(t):
             ev.append(("time", t))
             continue
+        m = PREFIX_TIME_RE.match(t)          # "09:30 rest..." -> time + rest
+        if m:
+            ev.append(("time", m.group(1)))
+            t = m.group(2)
         if TELNUM.match(t) or t in QUOTE or set(t) == {"_"}:
             continue
         if t in RESULT_MARKERS:
             ev.append(("marker", t))
             continue
-        if _is_name(t):
-            ev.append(("name", t, dict(ctx)))
+        parts = SPLIT_RE.split(t)
+        clean = [p.strip() for p in parts if p.strip()]
+        if len(clean) == 2 and _is_name(clean[0]) and _is_name(clean[1]):
+            push_names(clean[0])             # two names on ONE line -> two events
+            push_names(clean[1])
+            continue
+        push_names(t)
+
     out, last_kind, got, pending_time = [], "SINGLES", None, None
     for i, e in enumerate(ev):
         if e[0] == "kind":
@@ -567,4 +629,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
