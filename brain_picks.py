@@ -294,9 +294,10 @@ class Corpus:
         self.votes = defaultdict(Counter)   # key -> full-name spelling votes
         self.triples = set()
         self.id2key = {}        # (tour, sackmann_id) -> namekey (rank lookup)
+        self.match_rank = {}    # key -> (d8, rank)  freshest match-row evidence
         self.seq = 0
 
-    def add(self, d8, wname, lname, surf, tour="", wid="", lid=""):
+    def add(self, d8, wname, lname, surf, tour="", wid="", lid="", wr="", lr=""):
         if len(d8) != 8 or not d8.isdigit() or not wname or not lname:
             return False
         triple = (d8, wname.lower(), lname.lower())
@@ -308,6 +309,12 @@ class Corpus:
         self.triples.add(triple)
         self.votes[wk][wname] += 1
         self.votes[lk][lname] += 1
+        for key, rk in ((wk, wr), (lk, lr)):          # freshest rank evidence wins
+            rk = (rk or "").strip()
+            if rk.isdigit() and 0 < int(rk) < 9000:
+                keep = self.match_rank.get(key)
+                if not keep or d8 >= keep[0]:
+                    self.match_rank[key] = (d8, int(rk))
         if wid and lid and wid.isdigit() and lid.isdigit():
             self.id2key.setdefault((tour, wid), wk)
             self.id2key.setdefault((tour, lid), lk)
@@ -333,7 +340,9 @@ class Corpus:
                                 (r.get("loser_name") or "").strip(),
                                 r.get("surface") or "Hard", tour,
                                 (r.get("winner_id") or "").strip(),
-                                (r.get("loser_id") or "").strip()):
+                                (r.get("loser_id") or "").strip(),
+                                r.get("winner_rank") or "",
+                                r.get("loser_rank") or ""):
                         added += 1
                 n_arch += added
                 print(f"  {tour} {y}: +{added}", flush=True)
@@ -348,7 +357,9 @@ class Corpus:
                 if self.add((r.get("tourney_date") or "").strip(),
                             (r.get("winner_name") or "").strip(),
                             (r.get("loser_name") or "").strip(),
-                            r.get("surface") or "Hard", tour):
+                            r.get("surface") or "Hard", tour,
+                            wr=r.get("winner_rank") or "",
+                            lr=r.get("loser_rank") or ""):
                     added += 1
             print(f"  TLM {url.rsplit('/', 1)[-1]}: +{added}", flush=True)
         print(f"archive rows kept: {n_arch}", flush=True)
@@ -376,6 +387,7 @@ class Corpus:
 # ----------------------------------------------------------------------------
 def load_rankings(id2key):
     key2rank = {}
+    week = None
     for tour, urls in RANKS:
         raw = fetch_first(urls)
         if not raw:
@@ -400,7 +412,8 @@ def load_rankings(id2key):
                 key2rank[key] = int(rk)
                 mapped += 1
         print(f"  ranks {tour}: latest={latest}, mapped {mapped}/{total}")
-    return key2rank
+        week = latest if week is None or latest > week else week
+    return key2rank, week
 
 
 # ----------------------------------------------------------------------------
@@ -483,20 +496,22 @@ class Brain:
         return {p["key"]: p for p in inv}
 
     def resolve(self, fx):
+        """Returns (player, exact) - exact=False for fuzzy guesses, which may
+        appear in the log but must NEVER carry a published pick."""
         surname, init = parse_fix(fx)
         pool = [p for p in self.players.values()
                 if p["surname"] == surname and (init is None or p["init"] == init)]
-        if not pool and init:
+        if pool:
+            return sorted(pool, key=lambda p: (-p["matches"], p["rank"] or 9999))[0], True
+        if init:
             surns = sorted({p["surname"] for p in self.players.values() if p["init"] == init})
             for s in difflib.get_close_matches(surname, surns, n=3, cutoff=0.7):
                 pool = [p for p in self.players.values()
                         if p["surname"] == s and p["init"] == init]
                 if pool:
                     print(f'   [*] "{fx}" fuzzy -> "{[p["raw"] for p in pool][0]}"')
-                    break
-        if not pool:
-            return None
-        return sorted(pool, key=lambda p: (-p["matches"], p["rank"] or 9999))[0]
+                    return sorted(pool, key=lambda p: (-p["matches"], p["rank"] or 9999))[0], False
+        return None, True
 
     def h2h_diff(self, a, b):
         key = (a, b) if a <= b else (b, a)
@@ -577,7 +592,13 @@ def main():
         conn.close()
     else:
         print("== ranks: current week ==")
-        key2rank = load_rankings(corpus.id2key)
+        key2rank, week = load_rankings(corpus.id2key)
+        fresh = {k: (d, rk) for k, (d, rk) in corpus.match_rank.items()
+                 if week and d > week}
+        for k, (d, rk) in fresh.items():
+            key2rank[k] = rk
+        print(f"rank freshening: {len(fresh)} players use post-mirror match-row "
+              f"ranks (mirror week: {week})")
 
     brain = Brain(order, corpus.votes, key2rank)
 
@@ -599,7 +620,8 @@ def main():
         if courtname != court:
             court = courtname
             print(f"== {court} ({tour}) ==")
-        P1, P2 = brain.resolve(f1), brain.resolve(f2)
+        P1, P1x = brain.resolve(f1)
+        P2, P2x = brain.resolve(f2)
         if P1 is None or P2 is None:
             miss = f1 if P1 is None else f2
             print(f"  {t}  {f1} vs {f2}   -> NO DATA ({miss} has no archived matches): skip")
@@ -610,7 +632,7 @@ def main():
         print(f"  {t}  {f1} (#{P1['rank'] or '-'}, Elo {s1['Hard']:.0f}, {fw(fa)})"
               f" vs {f2} (#{P2['rank'] or '-'}, Elo {s2['Hard']:.0f}, {fw(fb)})"
               f"  -> {pickname}: {p1p}% / {p2p}%  {zone}")
-        if max(p1p, p2p) >= ZONE and fa and fb:
+        if max(p1p, p2p) >= ZONE and fa and fb and P1x and P2x:   # both EXACT matches only
             PUB.append({"court": courtname, "time": t, "tour": tour,
                         "n1": P1["raw"], "n2": P2["raw"],
                         "surface": fx["surface"],
