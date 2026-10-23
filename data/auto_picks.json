@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T05:06:22+00:00",
+ "generated": "2026-10-23T14:19:17+00:00",
  "date": "2026-10-23",
  "source": "tennis-feed robot brain - same v7 brains as the app; historic data: Jeff Sackmann archive, CC BY-NC-SA 4.0; fresh data: TennisMyLife (stats.tennismylife.org), MIT license",
  "picks": [
@@ -7,22 +7,11 @@
    "court": "Almaty",
    "time": "09:00",
    "tour": "ATP",
-   "n1": "Nikoloz Basilashvili",
-   "n2": "Adrian Mannarino",
-   "surface": "Hard",
-   "p1pct": 33,
-   "p2pct": 67,
-   "zone": "⚡"
-  },
-  {
-   "court": "Almaty",
-   "time": "09:00",
-   "tour": "ATP",
    "n1": "Stefanos Tsitsipas",
    "n2": "James Duckworth",
    "surface": "Hard",
-   "p1pct": 65,
-   "p2pct": 35,
+   "p1pct": 73,
+   "p2pct": 27,
    "zone": "⚡"
   },
   {
@@ -32,8 +21,8 @@
    "n1": "Clement Chidekh",
    "n2": "Francisco Cerundolo",
    "surface": "Hard",
-   "p1pct": 34,
-   "p2pct": 66,
+   "p1pct": 29,
+   "p2pct": 71,
    "zone": "⚡"
   },
   {
@@ -43,19 +32,30 @@
    "n1": "Corentin Moutet",
    "n2": "Tommy Paul",
    "surface": "Hard",
-   "p1pct": 29,
-   "p2pct": 71,
+   "p1pct": 21,
+   "p2pct": 79,
    "zone": "⚡"
   },
   {
-   "court": "Osaka",
-   "time": "08:30",
-   "tour": "WTA",
-   "n1": "Mary Stoiana",
-   "n2": "Katerina Siniakova",
+   "court": "Fort Worth",
+   "time": "18:00",
+   "tour": "ATP",
+   "n1": "Jenson Brooksby",
+   "n2": "Patrick Maloney",
    "surface": "Hard",
-   "p1pct": 29,
-   "p2pct": 71,
+   "p1pct": 70,
+   "p2pct": 30,
+   "zone": "⚡"
+  },
+  {
+   "court": "Guangzhou",
+   "time": "07:00",
+   "tour": "ATP",
+   "n1": "Coleman Wong",
+   "n2": "Jay Friend",
+   "surface": "Hard",
+   "p1pct": 65,
+   "p2pct": 35,
    "zone": "⚡"
   }
  ]
