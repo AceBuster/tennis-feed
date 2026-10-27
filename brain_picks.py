@@ -346,6 +346,32 @@ class Corpus:
                         added += 1
                 n_arch += added
                 print(f"  {tour} {y}: +{added}", flush=True)
+        # PHASE 12: the side streets - futures + qualifying archives, ATP only.
+        # 2021 window = nightly downloads stay light while every ACTIVE side-street
+        # player keeps a full recent trail (the app seeds walk the full lab world).
+        print("== corpus: side streets (futures + qual_chall, 2021..now) ==")
+        side_now = datetime.now(timezone.utc).year
+        for y in range(2021, side_now + 1):
+            for fam in ("futures", "qual_chall"):
+                raw = fetch_first([f"{GH}/atp_matches_{fam}_{y}.csv",
+                                   f"{HF}/atp/atp_matches_{fam}_{y}.csv"])
+                if not raw:
+                    print(f"  - {fam} {y}: unreachable, skipped")
+                    continue
+                added = 0
+                for r in csv_rows(raw):
+                    # no CSV ids on purpose: futures ids belong to another
+                    # id-space; identity in the robot is the NAMEKEY only.
+                    if self.add((r.get("tourney_date") or "").strip(),
+                                (r.get("winner_name") or "").strip(),
+                                (r.get("loser_name") or "").strip(),
+                                r.get("surface") or "Hard", "ATP",
+                                "", "",
+                                r.get("winner_rank") or "",
+                                r.get("loser_rank") or ""):
+                        added += 1
+                print(f"  {fam} {y}: +{added}")
+
         print(f"== corpus: TennisMyLife 2026 fresh+ongoing ==")
         for tour, url in TLM:
             raw = fetch_bytes(url)
