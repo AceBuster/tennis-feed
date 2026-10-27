@@ -1,0 +1,614 @@
+Basel (Switzerland), hard (indoor) ATP - SINGLES:	Hanfmann Y.
+	Struff J-L.
+Basel (Switzerland), hard (indoor) ATP - SINGLES:	Bertola R.
+	Shapovalov D.
+Basel (Switzerland), hard (indoor) ATP - SINGLES:	Borges N.
+	Ruud C.
+Basel (Switzerland), hard (indoor) ATP - SINGLES:	Djokovic N.
+	Humbert U.
+Basel (Switzerland), hard (indoor) ATP - SINGLES:	Fritz T.
+	Hijikata R.
+Basel (Switzerland), hard (indoor) ATP - SINGLES:	Hurkacz H.
+	Rune H.
+Vienna (Austria), hard (indoor) ATP - SINGLES:	Griekspoor T.
+	Nakashima B.
+Vienna (Austria), hard (indoor) ATP - SINGLES:	Merida Aguilar D.
+	Medvedev D.
+Vienna (Austria), hard (indoor) ATP - SINGLES:	Musetti L.
+	Tiafoe F.
+Vienna (Austria), hard (indoor) ATP - SINGLES:	Mensik J.
+	Mannarino A.
+Vienna (Austria), hard (indoor) ATP - SINGLES:	Rodionov J.
+	Basilashvili N.
+Vienna (Austria), hard (indoor) ATP - SINGLES:	Tien L.
+	De Minaur A.
+Guangzhou (China), hard WTA - SINGLES:	Siniakova K.
+	Tararudee L.
+Guangzhou (China), hard WTA - SINGLES:	Badosa P.
+	Kraus S.
+Guangzhou (China), hard WTA - SINGLES:	Dart H.
+	Tjen J.
+Guangzhou (China), hard WTA - SINGLES:	Shi H.
+	Yastremska D.
+Tokyo (Japan), hard WTA - SINGLES:	Rakhimova K.
+	Alexandrova E.
+Tokyo (Japan), hard WTA - SINGLES:	Osaka N.
+	Pohankova M.
+Tokyo (Japan), hard WTA - SINGLES:	Bucsa C.
+	Joint M.
+Tokyo (Japan), hard WTA - SINGLES:	Sasnovich A.
+	Shnaider D.
+Tokyo (Japan), hard WTA - SINGLES:	Eala A.
+	Gibson T.
+Brest (France), hard (indoor) CHALLENGER MEN - SINGLES:	Montes-De La Torre I.
+	Samuel T.
+Brest (France), hard (indoor) CHALLENGER MEN - SINGLES:	Gojo B.
+	Prizmic D.
+Brest (France), hard (indoor) CHALLENGER MEN - SINGLES:	Cina F.
+	Budkov Kjaer N.
+Brest (France), hard (indoor) CHALLENGER MEN - SINGLES:	Tabur C.
+	Romano F.
+Brest (France), hard (indoor) CHALLENGER MEN - SINGLES:	Bobichon M.
+	Virtanen O.
+Brest (France), hard (indoor) CHALLENGER MEN - SINGLES:	Gaston H.
+	Glinka D.
+Brest (France), hard (indoor) CHALLENGER MEN - SINGLES:	Maestrelli F.
+	Diallo G.
+Guayaquil (Ecuador), clay CHALLENGER MEN - SINGLES:	Bueno G.
+	Barrena A.
+Guayaquil (Ecuador), clay CHALLENGER MEN - SINGLES:	Camacho E.
+	Veliz A.
+Ningbo (China), hard CHALLENGER MEN - SINGLES:	Shimizu Y.
+	Hsu Y. H.
+Ningbo (China), hard CHALLENGER MEN - SINGLES:	Uchida K.
+	Mayot H.
+Ningbo (China), hard CHALLENGER MEN - SINGLES:	Broom C.
+	Demin Y.
+Ningbo (China), hard CHALLENGER MEN - SINGLES:	Moriya H.
+	Alkaya M.
+Seoul (South Korea), hard CHALLENGER MEN - SINGLES:	Harris L.
+	Jasika O.
+Seoul (South Korea), hard CHALLENGER MEN - SINGLES:	Chung Y.
+	Bu Y.
+Seoul (South Korea), hard CHALLENGER MEN - SINGLES:	Harris B.
+	Vukic A.
+Seoul (South Korea), hard CHALLENGER MEN - SINGLES:	Zhang Z.
+	Sakamoto R.
+Sioux Falls (USA), hard (indoor) CHALLENGER MEN - SINGLES:	Gorzny S.
+	Blanch Dar.
+Sioux Falls (USA), hard (indoor) CHALLENGER MEN - SINGLES:	Ostapenkov D.
+	Maloney P.
+Sioux Falls (USA), hard (indoor) CHALLENGER MEN - SINGLES:	Rottgering M.
+	Bigun K.
+Sioux Falls (USA), hard (indoor) CHALLENGER MEN - SINGLES:	Wolf J.J.
+	Milavsky D.
+Courmayeur (Italy), hard (indoor) CHALLENGER WOMEN - SINGLES:	Kotliar Y.
+	Andreeva E.
+Courmayeur (Italy), hard (indoor) CHALLENGER WOMEN - SINGLES:	Montgomery R.
+	Pigato L.
+Courmayeur (Italy), hard (indoor) CHALLENGER WOMEN - SINGLES:	Jacquemot E.
+	Werner C.
+Courmayeur (Italy), hard (indoor) CHALLENGER WOMEN - SINGLES:	Mair L.
+	Zavatska K.
+Courmayeur (Italy), hard (indoor) CHALLENGER WOMEN - SINGLES:	Yaneva E.
+	Selekhmeteva O.
+Courmayeur (Italy), hard (indoor) CHALLENGER WOMEN - SINGLES:	Klimovicova L.
+	Noha Akugue N.
+Courmayeur (Italy), hard (indoor) CHALLENGER WOMEN - SINGLES:	Knutson G.
+	Charaeva A.
+Courmayeur (Italy), hard (indoor) CHALLENGER WOMEN - SINGLES:	Stefanini L.
+	Aksu A.
+Curitiba (Brazil), clay CHALLENGER WOMEN - SINGLES:	Ayala L.
+	Ortenzi J.
+Curitiba (Brazil), clay CHALLENGER WOMEN - SINGLES:	Ce G.
+	Sierra S.
+Curitiba (Brazil), clay CHALLENGER WOMEN - SINGLES:	Leme Da Silva N. V.
+	Giovannini L.
+Curitiba (Brazil), clay CHALLENGER WOMEN - SINGLES:	Romero Gormaz L.
+	Vergara Rivera A.
+Curitiba (Brazil), clay CHALLENGER WOMEN - SINGLES:	Tubello A.
+	Cinalli L. M.
+Queretaro (Mexico), clay CHALLENGER WOMEN - SINGLES:	Plekhanova D.
+	Bulgaru M.
+Queretaro (Mexico), clay CHALLENGER WOMEN - SINGLES:	Hui K.
+	Andreescu B.
+Queretaro (Mexico), clay CHALLENGER WOMEN - SINGLES:	Podoroska N.
+	Rame A.
+Queretaro (Mexico), clay CHALLENGER WOMEN - SINGLES:	Maria T.
+	Colmegna M.
+M15 Fergana (Uzbekistan), hard ITF MEN - SINGLES:	Ivanov S.
+	Cherie Ligniere E.
+M15 Fergana (Uzbekistan), hard ITF MEN - SINGLES:	Krivoshchekov M.
+	Eichenseher D.
+M15 Fergana (Uzbekistan), hard ITF MEN - SINGLES:	Murtaza M.
+	Savelov P.
+M15 Fergana (Uzbekistan), hard ITF MEN - SINGLES:	Safonov A.
+	Dolzhenkov D.
+M15 Fergana (Uzbekistan), hard ITF MEN - SINGLES:	Zinatulin A.
+	Burtsev D.
+M15 Fergana (Uzbekistan), hard ITF MEN - SINGLES:	Osminkin V.
+	Omarkhanov A.
+M15 Fergana (Uzbekistan), hard ITF MEN - SINGLES:	Shin M.
+	Arcon A.
+M15 Fergana (Uzbekistan), hard ITF MEN - SINGLES:	Toshmukhamedov A.
+	Farkxodov S.
+M15 Fergana (Uzbekistan), hard ITF MEN - SINGLES:	Duhan C.
+	Lakshmanan A.
+M15 Fergana (Uzbekistan), hard ITF MEN - SINGLES:	Kvasov D.
+	Hrazdil J.
+M15 Fergana (Uzbekistan), hard ITF MEN - SINGLES:	Singh D.
+	Khazime D.
+M15 Fergana (Uzbekistan), hard ITF MEN - SINGLES:	Usmonjonov A.
+	Mueller C.
+M15 Mazatlan (Mexico), hard ITF MEN - SINGLES:	Arevalo S.
+	Delgado G.
+M15 Mazatlan (Mexico), hard ITF MEN - SINGLES:	Alujas R.
+	Alvarez M.
+M15 Mazatlan (Mexico), hard ITF MEN - SINGLES:	Bianchi J.
+	Karra T.
+M15 Monastir 37 (Tunisia), hard ITF MEN - SINGLES:	Makhlouf N.
+	Jadoun N.
+M15 Monastir 37 (Tunisia), hard ITF MEN - SINGLES:	Ouakaa A.
+	Verwerft L. G.
+M15 Monastir 37 (Tunisia), hard ITF MEN - SINGLES:	Corbinais S.
+	Heinrich S.
+M15 Monastir 37 (Tunisia), hard ITF MEN - SINGLES:	Geissinger M.
+	Chetouane M.
+M15 Monastir 37 (Tunisia), hard ITF MEN - SINGLES:	Piatti R.
+	Rejchtman Vinciguerra W.
+M15 Monastir 37 (Tunisia), hard ITF MEN - SINGLES:	Singh J.
+	Garcia Longo N.
+M15 Monastir 37 (Tunisia), hard ITF MEN - SINGLES:	Chen C.
+	Marmousez L.
+M15 Monastir 37 (Tunisia), hard ITF MEN - SINGLES:	Dougaz A.
+	Ciavarella N.
+M15 Monastir 37 (Tunisia), hard ITF MEN - SINGLES:	Duran T.
+	Bacaloni A.
+M15 Monastir 37 (Tunisia), hard ITF MEN - SINGLES:	Larue L.
+	Gavrielides L.
+M15 Monastir 37 (Tunisia), hard ITF MEN - SINGLES:	Nidunjianzan F.
+	Ciocca G.
+M15 Monastir 37 (Tunisia), hard ITF MEN - SINGLES:	Sahtali T.
+	Varaksa D.
+M15 Monastir 37 (Tunisia), hard ITF MEN - SINGLES:	Sanchez Martinez B.
+	Bouchelaghem C.
+M15 Monastir 37 (Tunisia), hard ITF MEN - SINGLES:	Smiej Y.
+	Tepmahc N.
+M15 Sharm ElSheikh 15 (Egypt), hard ITF MEN - SINGLES:	Dzhavakian Y.
+	Yilmaz K.
+M15 Sharm ElSheikh 15 (Egypt), hard ITF MEN - SINGLES:	El Feky G.
+	Elsayed A.
+M15 Sharm ElSheikh 15 (Egypt), hard ITF MEN - SINGLES:	Kirci K.
+	Yuan Y.
+M15 Sharm ElSheikh 15 (Egypt), hard ITF MEN - SINGLES:	Singh K.
+	Verbeek D.
+M15 Sharm ElSheikh 15 (Egypt), hard ITF MEN - SINGLES:	Anavatan M.
+	Garcian A.
+M15 Sharm ElSheikh 15 (Egypt), hard ITF MEN - SINGLES:	Ibrahim K.
+	Tiukaev R.
+M15 Sharm ElSheikh 15 (Egypt), hard ITF MEN - SINGLES:	Krawczyk J.
+	Bittoun C.
+M15 Sharm ElSheikh 15 (Egypt), hard ITF MEN - SINGLES:	Waldner N.
+	Car H.
+M15 Sharm ElSheikh 15 (Egypt), hard ITF MEN - SINGLES:	Bothma J.
+	Funk A.
+M15 Sharm ElSheikh 15 (Egypt), hard ITF MEN - SINGLES:	Brouwer G.
+	Ozdemir S. M.
+M15 Sharm ElSheikh 15 (Egypt), hard ITF MEN - SINGLES:	Maute J.
+	Ianin N.
+M15 Sharm ElSheikh 15 (Egypt), hard ITF MEN - SINGLES:	Piasek I.
+	Zgola B.
+M15 Sharm ElSheikh 15 (Egypt), hard ITF MEN - SINGLES:	Azkara A.
+	Iakubenko V.
+M15 Sharm ElSheikh 15 (Egypt), hard ITF MEN - SINGLES:	Benoit J.
+	De Lange P.
+M15 Sharm ElSheikh 15 (Egypt), hard ITF MEN - SINGLES:	Salbiev M.
+	Eerola O.
+M15 Sharm ElSheikh 15 (Egypt), hard ITF MEN - SINGLES:	Torcq B.
+	Burdet A.
+M15 Singapore 4 (Singapore), hard ITF MEN - SINGLES:	Kamath M.
+	Jimenez M. D.
+M15 Singapore 4 (Singapore), hard ITF MEN - SINGLES:	Rifqi Fitriadi M.
+	Mehrotra A.
+M15 Singapore 4 (Singapore), hard ITF MEN - SINGLES:	Ganesan A.
+	Nakamura R.
+M15 Singapore 4 (Singapore), hard ITF MEN - SINGLES:	Habib A.
+	Sinha N. K.
+M15 Singapore 4 (Singapore), hard ITF MEN - SINGLES:	Han Seon Yong
+	Baumgartner S.
+M15 Singapore 4 (Singapore), hard ITF MEN - SINGLES:	Inui Y.
+	Visaya A.
+M15 Singapore 4 (Singapore), hard ITF MEN - SINGLES:	Lorusso L.
+	Sumizawa D.
+M15 Singapore 4 (Singapore), hard ITF MEN - SINGLES:	Karma N.
+	Janvier M.
+M15 Singapore 4 (Singapore), hard ITF MEN - SINGLES:	Karthik P.
+	Kirkin E.
+M15 Singapore 4 (Singapore), hard ITF MEN - SINGLES:	Kose C.
+	Alam S.
+M15 Singapore 4 (Singapore), hard ITF MEN - SINGLES:	Nakajima K.
+	Wong M. Z.
+M15 Singapore 4 (Singapore), hard ITF MEN - SINGLES:	Ogura K.
+	Van Herzeele J.
+M15 Singapore 4 (Singapore), hard ITF MEN - SINGLES:	Storch S.
+	Watanabe Eriksson A.
+M15 Yanagawa City (Japan), hard ITF MEN - SINGLES:	Hieda H.
+	Koizumi N.
+M15 Yanagawa City (Japan), hard ITF MEN - SINGLES:	Kumasaka T.
+	Tanuma R.
+M15 Yanagawa City (Japan), hard ITF MEN - SINGLES:	Oki Y.
+	Brown O.
+M15 Yanagawa City (Japan), hard ITF MEN - SINGLES:	Shiraishi H.
+	Katayama S.
+M15 Yanagawa City (Japan), hard ITF MEN - SINGLES:	Yamasaki J.
+	Connel J.
+M15 Yanagawa City (Japan), hard ITF MEN - SINGLES:	Fukuda S.
+	Muto S.
+M15 Yanagawa City (Japan), hard ITF MEN - SINGLES:	Karigyo T.
+	Taka Y.
+M15 Yanagawa City (Japan), hard ITF MEN - SINGLES:	Suzuki K.
+	Chen Y. C.
+M15 Yanagawa City (Japan), hard ITF MEN - SINGLES:	Tomida Y.
+	Lee W. C.
+M15 Yanagawa City (Japan), hard ITF MEN - SINGLES:	Yamamoto N.
+	Yamanaka T.
+M15 Yanagawa City (Japan), hard ITF MEN - SINGLES:	Kawachi K.
+	Hazawa S.
+M15 Yanagawa City (Japan), hard ITF MEN - SINGLES:	Koyama H.
+	Malaszszak M.
+M15 Yanagawa City (Japan), hard ITF MEN - SINGLES:	Shibano K.
+	Nakanishi S.
+M15 Yanagawa City (Japan), hard ITF MEN - SINGLES:	Tanaka Y.
+	Tange S.
+M15 Yanagawa City (Japan), hard ITF MEN - SINGLES:	Watanabe K.
+	Hashimoto H.
+M15 Yanagawa City (Japan), hard ITF MEN - SINGLES:	Kawanishi H.
+	Takamura H.
+M25 Las Vegas, NV 2 (USA), hard ITF MEN - SINGLES:	Braswell M.
+	Cozbinov A.
+M25 Las Vegas, NV 2 (USA), hard ITF MEN - SINGLES:	Corwin F.
+	Zamora N.
+M25 Las Vegas, NV 2 (USA), hard ITF MEN - SINGLES:	Djosic N.
+	Konduri T.
+M25 Las Vegas, NV 2 (USA), hard ITF MEN - SINGLES:	Jansen W.
+	Calvelo X.
+M25 Las Vegas, NV 2 (USA), hard ITF MEN - SINGLES:	Shimanov O.
+	Rozin S.
+M25 Malta (Malta), hard ITF MEN - SINGLES:	Asciak M.
+	Orlov V.
+M25 Malta (Malta), hard ITF MEN - SINGLES:	Borg L.
+	Delicata L.
+M25 Malta (Malta), hard ITF MEN - SINGLES:	Dhamne M.
+	Ciric A.
+M25 Malta (Malta), hard ITF MEN - SINGLES:	Ehrenschneider N.
+	Gonzalez Fernandez M.
+M25 Malta (Malta), hard ITF MEN - SINGLES:	Oliel Y.
+	Cretu C.
+M25 Malta (Malta), hard ITF MEN - SINGLES:	Scaglia M.
+	Masur D.
+M25 Malta (Malta), hard ITF MEN - SINGLES:	Tsitsipas Pe.
+	Kravchenko G.
+M25 Norman, OK (USA), hard ITF MEN - SINGLES:	Chavez T.
+	Hudd E.
+M25 Norman, OK (USA), hard ITF MEN - SINGLES:	Jong S.
+	Harazaki A.
+M25 Norman, OK (USA), hard ITF MEN - SINGLES:	Melero K. A.
+	McHugh A.
+M25 Norman, OK (USA), hard ITF MEN - SINGLES:	Papamalamis T.
+	Rybakov A.
+M25 Norman, OK (USA), hard ITF MEN - SINGLES:	Rodriguez J. A.
+	Hussey G.
+M25 Tamworth 2 (Australia), hard ITF MEN - SINGLES:	Baker N.
+	Satara H.
+M25 Tamworth 2 (Australia), hard ITF MEN - SINGLES:	Bulte A.
+	Ibraimi Y.
+M25 Tamworth 2 (Australia), hard ITF MEN - SINGLES:	Dellavedova M.
+	Nicholls D.
+M25 Tamworth 2 (Australia), hard ITF MEN - SINGLES:	Sach T.
+	Nakagawa N.
+M25 Tamworth 2 (Australia), hard ITF MEN - SINGLES:	Hoole C.
+	Hoeyeraal H.
+M25 Tamworth 2 (Australia), hard ITF MEN - SINGLES:	Marinkov P.
+	Ellis B.
+M25 Tamworth 2 (Australia), hard ITF MEN - SINGLES:	Talic Z.
+	Sekulic P.
+M25 Tamworth 2 (Australia), hard ITF MEN - SINGLES:	Vickery L.
+	Falck R.
+M25 Tamworth 2 (Australia), hard ITF MEN - SINGLES:	Becroft I.
+	Vujic S.
+M25 Tamworth 2 (Australia), hard ITF MEN - SINGLES:	Jones H.
+	Bouzige M.
+M25 Tamworth 2 (Australia), hard ITF MEN - SINGLES:	Shepp A.
+	Cook E.
+M25 Tamworth 2 (Australia), hard ITF MEN - SINGLES:	Stevens Z.
+	Atkinson C.
+M25 Tamworth 2 (Australia), hard ITF MEN - SINGLES:	Aguiard E.
+	O'Connell B.
+M25 Tamworth 2 (Australia), hard ITF MEN - SINGLES:	Dong C.
+	Ryan Ziegann S.
+M25 Tamworth 2 (Australia), hard ITF MEN - SINGLES:	Jones S.
+	Ferguson C.
+M25 Tamworth 2 (Australia), hard ITF MEN - SINGLES:	Pham D.
+	Beale J.
+W100 New Braunfels, TX (USA), hard ITF WOMEN - SINGLES:	Broadus S.
+	Urhobo A.
+W100 New Braunfels, TX (USA), hard ITF WOMEN - SINGLES:	Frodin T.
+	Gao X.
+W100 New Braunfels, TX (USA), hard ITF WOMEN - SINGLES:	McDonald E.
+	Kalieva E.
+W100 New Braunfels, TX (USA), hard ITF WOMEN - SINGLES:	Stephens S.
+	Nijkamp R. M.
+W15 Essen (Germany), hard ITF WOMEN - SINGLES:	Abendroth I. A.
+	Glaser E. S.
+W15 Essen (Germany), hard ITF WOMEN - SINGLES:	Schweika M.
+	Solakov L.
+W15 Essen (Germany), hard ITF WOMEN - SINGLES:	Biolay S.
+	Slavikova E.
+W15 Essen (Germany), hard ITF WOMEN - SINGLES:	Ciocan M.
+	Di Girolami T.
+W15 Monastir 29 (Tunisia), hard ITF WOMEN - SINGLES:	Bhopal A.
+	Rojas S. C.
+W15 Monastir 29 (Tunisia), hard ITF WOMEN - SINGLES:	De Ezcurra L.
+	Lazarenko M.
+W15 Monastir 29 (Tunisia), hard ITF WOMEN - SINGLES:	Dibenedetto C.
+	Lei M.
+W15 Monastir 29 (Tunisia), hard ITF WOMEN - SINGLES:	Gandolfi F.
+	Komano M.
+W15 Monastir 29 (Tunisia), hard ITF WOMEN - SINGLES:	Sarganella V. N.
+	Garcia-Patron Canals A.
+W15 Monastir 29 (Tunisia), hard ITF WOMEN - SINGLES:	Sozaonova N.
+	Gentili A.
+W15 Monastir 29 (Tunisia), hard ITF WOMEN - SINGLES:	Vogt M.
+	Watanabe Y.
+W15 Monastir 29 (Tunisia), hard ITF WOMEN - SINGLES:	Gergec A.
+	Dho N.
+W15 Monastir 29 (Tunisia), hard ITF WOMEN - SINGLES:	Gharbi E.
+	Xu B.
+W15 Monastir 29 (Tunisia), hard ITF WOMEN - SINGLES:	Langlais C.
+	Gloeckner P.
+W15 Monastir 29 (Tunisia), hard ITF WOMEN - SINGLES:	Lizunova A.
+	Nishimura K.
+W15 Monastir 29 (Tunisia), hard ITF WOMEN - SINGLES:	Voronina K.
+	Husar S.
+W15 Neuquen (Argentina), clay ITF WOMEN - SINGLES:	Doldan Z.
+	Morini L.
+W15 Neuquen (Argentina), clay ITF WOMEN - SINGLES:	Lopez Ocampos A. J.
+	Pajello A.
+W15 Neuquen (Argentina), clay ITF WOMEN - SINGLES:	Sosa C. C.
+	Boyden M.
+W15 Neuquen (Argentina), clay ITF WOMEN - SINGLES:	Kilapi C. E.
+	Danilova A.
+W15 Neuquen (Argentina), clay ITF WOMEN - SINGLES:	Nappi S. N.
+	Finchelstein S.
+W15 Neuquen (Argentina), clay ITF WOMEN - SINGLES:	Tejada A.
+	Simon Padros S.
+W15 Neuquen (Argentina), clay ITF WOMEN - SINGLES:	Agudelo L.
+	Estevez J.
+W15 Sharm ElSheikh 17 (Egypt), hard ITF WOMEN - SINGLES:	Alhussein L.
+	Meshcheryakova K.
+W15 Sharm ElSheikh 17 (Egypt), hard ITF WOMEN - SINGLES:	Atay S.
+	Elkady J.
+W15 Sharm ElSheikh 17 (Egypt), hard ITF WOMEN - SINGLES:	Popovic K.
+	Nozdrachova M.
+W15 Sharm ElSheikh 17 (Egypt), hard ITF WOMEN - SINGLES:	Suvirdjonkova V.
+	Dmitruk K.
+W15 Sharm ElSheikh 17 (Egypt), hard ITF WOMEN - SINGLES:	Coppez K.
+	Samir S.
+W15 Sharm ElSheikh 17 (Egypt), hard ITF WOMEN - SINGLES:	Medvedeva M.
+	Abouelsaad H.
+W15 Sharm ElSheikh 17 (Egypt), hard ITF WOMEN - SINGLES:	Suslova S.
+	Bartone K.
+W15 Sharm ElSheikh 17 (Egypt), hard ITF WOMEN - SINGLES:	Ibrahim J.
+	Efremova A.
+W15 Sharm ElSheikh 17 (Egypt), hard ITF WOMEN - SINGLES:	Kochta T.
+	El Sayed A.
+W15 Sharm ElSheikh 17 (Egypt), hard ITF WOMEN - SINGLES:	Mozgaleva A.
+	Mu-Jie T.
+W15 Sharm ElSheikh 17 (Egypt), hard ITF WOMEN - SINGLES:	De Koning R.
+	Saad S.
+W15 Sharm ElSheikh 17 (Egypt), hard ITF WOMEN - SINGLES:	Kuharenko P.
+	Vasileva A.
+W15 Sharm ElSheikh 17 (Egypt), hard ITF WOMEN - SINGLES:	Ziatdinova A.
+	Belkova K.
+W15 Sharm ElSheikh 17 (Egypt), hard ITF WOMEN - SINGLES:	Martianova S.
+	Bednarz Z.
+W15 Sharm ElSheikh 17 (Egypt), hard ITF WOMEN - SINGLES:	Pahwa S.
+	Wildgruber A.
+W15 Sharm ElSheikh 17 (Egypt), hard ITF WOMEN - SINGLES:	Sedenkova V.
+	Milanese S.
+W15 Singapore 4 (Singapore), hard ITF WOMEN - SINGLES:	Chanta A.
+	Kang N. H.
+W15 Singapore 4 (Singapore), hard ITF WOMEN - SINGLES:	Matsumoto Y.
+	Rawat A.
+W15 Singapore 4 (Singapore), hard ITF WOMEN - SINGLES:	Miyata M.
+	Varaksina A.
+W15 Singapore 4 (Singapore), hard ITF WOMEN - SINGLES:	Podgorichani L.
+	Ng K. N. C.
+W15 Singapore 4 (Singapore), hard ITF WOMEN - SINGLES:	Thakkar S. P.
+	Giam H.
+W15 Singapore 4 (Singapore), hard ITF WOMEN - SINGLES:	Chikaraishi Y.
+	Yuldasheva S.
+W15 Singapore 4 (Singapore), hard ITF WOMEN - SINGLES:	Khodzhaeva E.
+	Naklo T.
+W15 Singapore 4 (Singapore), hard ITF WOMEN - SINGLES:	Lim L. E. T.
+	Ohashi R.
+W15 Taby (Sweden), hard ITF WOMEN - SINGLES:	Biot A.
+	Bernstein G.
+W15 Taby (Sweden), hard ITF WOMEN - SINGLES:	Blazkova K.
+	Pozarenko A.
+W15 Taby (Sweden), hard ITF WOMEN - SINGLES:	Maslenkova M.
+	Gadient N.
+W15 Taby (Sweden), hard ITF WOMEN - SINGLES:	Bokova V.
+	Ahti V.
+W15 Taby (Sweden), hard ITF WOMEN - SINGLES:	Marinkovic I.
+	Nuudi M.
+W15 Taby (Sweden), hard ITF WOMEN - SINGLES:	Saner J.
+	Hafstrom V.
+W15 Taby (Sweden), hard ITF WOMEN - SINGLES:	Bernstein L.
+	Pulchartova L.
+W15 Taby (Sweden), hard ITF WOMEN - SINGLES:	Burylo M.
+	Salvadori M.
+W15 Taby (Sweden), hard ITF WOMEN - SINGLES:	Haavisto E.
+	Kujovic K.
+W15 Taby (Sweden), hard ITF WOMEN - SINGLES:	Hennemann C. W.
+	Radenkovic M.
+W15 Taby (Sweden), hard ITF WOMEN - SINGLES:	Anikina E.
+	Heinonen I.
+W15 Taby (Sweden), hard ITF WOMEN - SINGLES:	Dapkute I.
+	Djafari L.
+W35 Kunshan (China), hard ITF WOMEN - SINGLES:	Bai Z.
+	Zelinskaya D.
+W35 Kunshan (China), hard ITF WOMEN - SINGLES:	Jeong B.
+	Huang Yujia
+W35 Kunshan (China), hard ITF WOMEN - SINGLES:	Shao Y.
+	Panshina V.
+W35 Kunshan (China), hard ITF WOMEN - SINGLES:	Leykina P.
+	Lin Y. J.
+W35 Kunshan (China), hard ITF WOMEN - SINGLES:	Zhang J.
+	Wang J.
+W35 Kunshan (China), hard ITF WOMEN - SINGLES:	Zolotareva R.
+	Deng T. T.
+W35 Kunshan (China), hard ITF WOMEN - SINGLES:	Yuan C.
+	Efremova K.
+W35 Kunshan (China), hard ITF WOMEN - SINGLES:	Luo X.
+	Nugroho P. M.
+W35 Kunshan (China), hard ITF WOMEN - SINGLES:	Ovcharenko E.
+	Zheng W.
+W35 Kunshan (China), hard ITF WOMEN - SINGLES:	Yang Y.
+	Guo M.
+W35 Kunshan (China), hard ITF WOMEN - SINGLES:	Wei S.
+	Han J.
+W35 Kunshan (China), hard ITF WOMEN - SINGLES:	Jiang Z.
+	Khomutsianskaya D.
+W35 Malta (Malta), hard ITF WOMEN - SINGLES:	Bertacchi A.
+	Reguer A.
+W35 Malta (Malta), hard ITF WOMEN - SINGLES:	De Zeeuw J.
+	Peer L.
+W35 Malta (Malta), hard ITF WOMEN - SINGLES:	Giraldi Requena A.
+	Magro M.
+W35 Malta (Malta), hard ITF WOMEN - SINGLES:	Grammatikopoulou V.
+	Ruchkina K.
+W35 Malta (Malta), hard ITF WOMEN - SINGLES:	Lovric P.
+	Genovese E.
+W35 Malta (Malta), hard ITF WOMEN - SINGLES:	Raggi A.
+	Petruzelova L.
+W35 Malta (Malta), hard ITF WOMEN - SINGLES:	Urgesi F.
+	Ceuca A. A.
+W35 Norman, OK (USA), hard ITF WOMEN - SINGLES:	Brunkel L.
+	Guzman D.
+W35 Norman, OK (USA), hard ITF WOMEN - SINGLES:	Goto R.
+	Schuman A.
+W35 Norman, OK (USA), hard ITF WOMEN - SINGLES:	Hatouka Y.
+	Defalco J.
+W35 Norman, OK (USA), hard ITF WOMEN - SINGLES:	Okalova M.
+	Mamedova E.
+W35 Sydney 2 (Australia), hard ITF WOMEN - SINGLES:	Alame Re.
+	Yuhan L.
+W35 Sydney 2 (Australia), hard ITF WOMEN - SINGLES:	Gale L.
+	Danilova O.
+W35 Sydney 2 (Australia), hard ITF WOMEN - SINGLES:	Sibai J.
+	Subasic A.
+W35 Sydney 2 (Australia), hard ITF WOMEN - SINGLES:	Swan K.
+	Britez Risso L. F.
+W35 Sydney 2 (Australia), hard ITF WOMEN - SINGLES:	Barry M.
+	Mushika Mio
+W35 Sydney 2 (Australia), hard ITF WOMEN - SINGLES:	Chaudhari V.
+	Tsao C. Y.
+W35 Sydney 2 (Australia), hard ITF WOMEN - SINGLES:	Sato H.
+	Hoedt M.
+W35 Sydney 2 (Australia), hard ITF WOMEN - SINGLES:	Tse E.
+	Back D.
+W35 Sydney 2 (Australia), hard ITF WOMEN - SINGLES:	Kokkinis T.
+	Beck A.
+W35 Sydney 2 (Australia), hard ITF WOMEN - SINGLES:	Stevens A.
+	Khan L.
+W35 Sydney 2 (Australia), hard ITF WOMEN - SINGLES:	Thompson B.
+	Nishimoto S.
+W35 Sydney 2 (Australia), hard ITF WOMEN - SINGLES:	Wan I W.
+	Yamazaki I.
+W35 Sydney 2 (Australia), hard ITF WOMEN - SINGLES:	Kozaki F.
+	Campbell G.
+W35 Sydney 2 (Australia), hard ITF WOMEN - SINGLES:	Lopez E.
+	Yang Y. Y.
+W50 Istanbul (Turkey), hard ITF WOMEN - SINGLES:	Karatancheva L.
+	Schunk N.
+W50 Istanbul (Turkey), hard ITF WOMEN - SINGLES:	Kuzmova K.
+	sirin m. t.
+W50 Istanbul (Turkey), hard ITF WOMEN - SINGLES:	Yashina E.
+	Spasova B.
+W50 Istanbul (Turkey), hard ITF WOMEN - SINGLES:	Buyukakcay C.
+	Kurt I.
+W50 Istanbul (Turkey), hard ITF WOMEN - SINGLES:	Novak K.
+	Yoruk I.
+W50 Istanbul (Turkey), hard ITF WOMEN - SINGLES:	Popa M. S.
+	Encheva L.
+W50 Istanbul (Turkey), hard ITF WOMEN - SINGLES:	Gasanova A.
+	Dotsenko E.
+W50 Istanbul (Turkey), hard ITF WOMEN - SINGLES:	Radwanska U.
+	Kubareva A.
+W50 Morelia (Mexico), hard ITF WOMEN - SINGLES:	Hernandez M. J.
+	Regalado Macias F.
+W50 Morelia (Mexico), hard ITF WOMEN - SINGLES:	Marmorstein J.
+	Nava Elkin A. C.
+W50 Morelia (Mexico), hard ITF WOMEN - SINGLES:	Tona M.
+	Malkin M.
+W50 Morelia (Mexico), hard ITF WOMEN - SINGLES:	Garcia J.
+	Bohrer Martins C.
+W50 Morelia (Mexico), hard ITF WOMEN - SINGLES:	V.
+	Pantoja E. M. F.
+W75 Glasgow (United Kingdom), hard ITF WOMEN - SINGLES:	Allen V.
+	Okutoyi A.
+W75 Glasgow (United Kingdom), hard ITF WOMEN - SINGLES:	Dudeney A.
+	Dada-Mascoll S.
+W75 Glasgow (United Kingdom), hard ITF WOMEN - SINGLES:	Lamens S.
+	Aikawa M.
+W75 Glasgow (United Kingdom), hard ITF WOMEN - SINGLES:	Avdeeva J.
+	Maloney E.
+W75 Glasgow (United Kingdom), hard ITF WOMEN - SINGLES:	Steiner V.
+	Bolkvadze M.
+W75 Glasgow (United Kingdom), hard ITF WOMEN - SINGLES:	Vrancken Peeters A.
+	Malygina E.
+W75 Glasgow (United Kingdom), hard ITF WOMEN - SINGLES:	Bekker S.
+	Seidel E.
+W75 Glasgow (United Kingdom), hard ITF WOMEN - SINGLES:	Lansere S.
+	Longueville R.
+W75 Glasgow (United Kingdom), hard ITF WOMEN - SINGLES:	Vedder E.
+	Klugman H.
+W75 Poitiers (France), hard ITF WOMEN - SINGLES:	Szostak M.
+	Stusek J.
+W75 Poitiers (France), hard ITF WOMEN - SINGLES:	Vlasselaer C.
+	Teixido Garcia M.
+W75 Poitiers (France), hard ITF WOMEN - SINGLES:	Berecoechea N.
+	Babel O.
+W75 Poitiers (France), hard ITF WOMEN - SINGLES:	Leonard M.
+	Hesse A.
+W75 Poitiers (France), hard ITF WOMEN - SINGLES:	Dittmann G. M.
+	Partaud M.
+W75 Poitiers (France), hard ITF WOMEN - SINGLES:	Dodin O.
+	Hays G.
+W75 Poitiers (France), hard ITF WOMEN - SINGLES:	Monnot A.
+	Lollia M.
+W75 Poitiers (France), hard ITF WOMEN - SINGLES:	Lim J.
+	Jorge F.
+W75 Poitiers (France), hard ITF WOMEN - SINGLES:	Boulard L.
+	Tan H.
+W75 Toronto (Canada), hard ITF WOMEN - SINGLES:	Ansari C.
+	Chavez T.
+W75 Toronto (Canada), hard ITF WOMEN - SINGLES:	Arseneault A.
+	Saito S.
+W75 Toronto (Canada), hard ITF WOMEN - SINGLES:	Bayerlova M.
+	Kulikova A.
+W75 Toronto (Canada), hard ITF WOMEN - SINGLES:	Brantmeier R.
+	Inoue H.
+W75 Toronto (Canada), hard ITF WOMEN - SINGLES:	Cabio A.
+	Ryser V.
+W75 Toronto (Canada), hard ITF WOMEN - SINGLES:	Cross K.
+	Bajraliu L.
+W75 Toronto (Canada), hard ITF WOMEN - SINGLES:	Gimbrere J.
+	Ngounoue C.
+W75 Toronto (Canada), hard ITF WOMEN - SINGLES:	Gowda T.
+	Rogers A. S.
+W75 Toronto (Canada), hard ITF WOMEN - SINGLES:	Sieg M.
+	Yoshioka K.
+W75 Toronto (Canada), hard ITF WOMEN - SINGLES:	Tanguilig C.
+	Niemeier J.
