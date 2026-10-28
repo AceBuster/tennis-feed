@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T05:58:56+00:00",
+ "generated": "2026-10-28T16:10:16+00:00",
  "date": "2026-10-28",
  "source": "tennis-feed robot brain - same v7 brains as the app; historic data: Jeff Sackmann archive, CC BY-NC-SA 4.0; fresh data: TennisMyLife (stats.tennismylife.org), MIT license",
  "picks": [
@@ -10,8 +10,8 @@
    "n1": "Brandon Nakashima",
    "n2": "Daniil Medvedev",
    "surface": "Hard",
-   "p1pct": 25,
-   "p2pct": 75,
+   "p1pct": 24,
+   "p2pct": 76,
    "zone": "⚡"
   },
   {
@@ -76,8 +76,8 @@
    "n1": "Filippo Romano",
    "n2": "Otto Virtanen",
    "surface": "Hard",
-   "p1pct": 27,
-   "p2pct": 73,
+   "p1pct": 28,
+   "p2pct": 72,
    "zone": "⚡"
   },
   {
@@ -87,8 +87,8 @@
    "n1": "Yu Hsiou Hsu",
    "n2": "Harold Mayot",
    "surface": "Hard",
-   "p1pct": 31,
-   "p2pct": 69,
+   "p1pct": 32,
+   "p2pct": 68,
    "zone": "⚡"
   },
   {
