@@ -1,12 +1,12 @@
 {
- "generated": "2026-10-30T05:07:10+00:00",
+ "generated": "2026-10-30T12:29:12+00:00",
  "build": "v3",
  "attribution": [
   "historic data: Jeff Sackmann archive, CC BY-NC-SA 4.0",
   "fresh data: TennisMyLife (stats.tennismylife.org), MIT license"
  ],
  "counters": {
-  "new_matches": 5912,
+  "new_matches": 5928,
   "ranked": 3812
  }
 }
